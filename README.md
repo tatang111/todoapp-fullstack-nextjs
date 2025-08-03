@@ -11,5 +11,3 @@ Prisma ORM is used to simplify and accelerate backend development.
 Deployed on Railway.
 
 This is just the frontend application for this fullstack project - you can find the [Backend repository here](https://github.com/tatang111/todoapp-fullstack-experss)
-
-🔗 Backend Repository
