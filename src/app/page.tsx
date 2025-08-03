@@ -24,10 +24,10 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
 import TabelProducts from "@/components/TabelProducts";
 import { toast } from "sonner";
 import { useEffect, useState } from "react";
+import axiosInstance from "@/lib/AxiosInstance";
 
 const addProductSchema = z.object({
   name: z.string().nonempty("Name is required"),
@@ -51,8 +51,8 @@ export default function Home() {
   const { mutate } = useMutation({
     mutationFn: async (values: AddProductSchema) => {
       try {
-        const products = await axios.post(
-          "http://localhost:3000/products",
+        const products = await axiosInstance.post(
+          "products",
           values
         );
       } catch (err) {
