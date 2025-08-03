@@ -10,4 +10,4 @@ The backend is built with Express.js (Node.js framework), using PostgreSQL as th
 Prisma ORM is used to simplify and accelerate backend development.
 Deployed on Railway.
 
-This is just the frontend application for this fullstack project - you can find the [Backend repository here](https://github.com/tatang111/todoapp-fullstack-experss)
+This is just the frontend application for this fullstack project - you can find the [Backend repository here](https://github.com/tatang111/todoapp-fullstack-express)
